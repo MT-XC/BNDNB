@@ -121,6 +121,57 @@ proxies:
   - {name: 英国伦敦-1x, server: 79.72.80.93, port: 443, type: vless, tls: true, uuid: 4f1f0363-4392-4dc1-ac54-fe47bf1cf57d, servername: iosapps.itunes.apple.com, host: iosapps.itunes.apple.com, flow: xtls-rprx-vision, reality-opts: {public-key: qkP2pqQ3NHNBkyzqsC2W9wChp3OfeXdVjOhUv8vQW0o, short-id: aac4df9d05a5ba8f}, client-fingerprint: random, skip-cert-verify: false}
   - {name: 台湾—TK专线, server: c8217-b2a.h1.49d2.5e11.613.b297.djjsvip.cfd, port: 443, type: vless, tls: true, uuid: 4f1f0363-4392-4dc1-ac54-fe47bf1cf57d, servername: www.microsoft.com, host: www.microsoft.com, flow: xtls-rprx-vision, reality-opts: {public-key: -QnsFApdhq1l1d2h302qhAs7usDdWLBTAOeMH54dwmU, short-id: c2bdc032}, client-fingerprint: random, skip-cert-verify: false}
   - {name: 印度孟买, server: 141.148.207.7, port: 443, type: vless, tls: true, uuid: 4f1f0363-4392-4dc1-ac54-fe47bf1cf57d, servername: musicstatus.apps.apple.com, host: musicstatus.apps.apple.com, flow: xtls-rprx-vision, reality-opts: {public-key: qkP2pqQ3NHNBkyzqsC2W9wChp3OfeXdVjOhUv8vQW0o, short-id: aac4df9d05a5ba8f}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 电信测试线路1, server: 162.159.48.5, port: 443, type: vless, tls: true, uuid: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, servername: 227.bxyewqrbx.top, network: ws, ws-opts: {path: /jd/xg1, headers: {Host: 227.bxyewqrbx.top}}}
+  - {name: 联通测试线路2, server: 104.26.12.210, port: 443, type: vless, tls: true, uuid: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, servername: 227.bxyewqrbx.top, network: ws, ws-opts: {path: /jd/xg1, headers: {Host: 227.bxyewqrbx.top}}}
+  - {name: 移动测试线路3, server: 104.18.45.170, port: 443, type: vless, tls: true, uuid: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, servername: 227.bxyewqrbx.top, network: ws, ws-opts: {path: /jd/xg1, headers: {Host: 227.bxyewqrbx.top}}}
+  - {name: 线路01, server: usa1.wanxiangjd.cc, port: 14010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: "直连美国A1[推荐]", server: usa1.wanxiangjd.cc, port: 14010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: "直连美国A2[推荐]", server: usa3.wanxiangjd.cc, port: 14010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 【家宽】香港01, server: hk.subwx.com, port: 35000, type: hysteria2, ports: 35000, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, sni: apple.com, skip-cert-verify: true}
+  - {name: 香港1, server: a1.wanxiangjd.cc, port: 10001, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港2, server: a1.wanxiangjd.cc, port: 10002, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港3, server: a1.wanxiangjd.cc, port: 10003, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港4, server: a1.wanxiangjd.cc, port: 10004, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港5, server: a1.wanxiangjd.cc, port: 10005, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港6, server: a1.wanxiangjd.cc, port: 10006, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港7, server: a1.wanxiangjd.cc, port: 10007, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港8, server: a1.wanxiangjd.cc, port: 10008, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港9, server: a1.wanxiangjd.cc, port: 10009, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港10, server: a1.wanxiangjd.cc, port: 10010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港11, server: a1.wanxiangjd.cc, port: 10011, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 香港12, server: a1.wanxiangjd.cc, port: 10012, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本1, server: a1.wanxiangjd.cc, port: 11001, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本2, server: a1.wanxiangjd.cc, port: 11002, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本3, server: a1.wanxiangjd.cc, port: 11003, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本4, server: a1.wanxiangjd.cc, port: 11004, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本5, server: a1.wanxiangjd.cc, port: 11005, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本6, server: a1.wanxiangjd.cc, port: 11006, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本7, server: a1.wanxiangjd.cc, port: 11007, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 日本8, server: a1.wanxiangjd.cc, port: 11008, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡1, server: a1.wanxiangjd.cc, port: 12001, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡2, server: a1.wanxiangjd.cc, port: 12002, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡3, server: a1.wanxiangjd.cc, port: 12003, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡4, server: a1.wanxiangjd.cc, port: 12004, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡5, server: a1.wanxiangjd.cc, port: 12005, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡6, server: a1.wanxiangjd.cc, port: 12006, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡7, server: a1.wanxiangjd.cc, port: 12007, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 新加坡8, server: a1.wanxiangjd.cc, port: 12008, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾1, server: a1.wanxiangjd.cc, port: 13001, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾2, server: a1.wanxiangjd.cc, port: 13002, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾3, server: a1.wanxiangjd.cc, port: 13003, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾4, server: a1.wanxiangjd.cc, port: 13004, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾5, server: a1.wanxiangjd.cc, port: 13005, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾6, server: a1.wanxiangjd.cc, port: 13006, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾7, server: a1.wanxiangjd.cc, port: 13007, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 台湾8, server: a1.wanxiangjd.cc, port: 13008, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-1, server: a1.wanxiangjd.cc, port: 14001, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-2, server: a1.wanxiangjd.cc, port: 14002, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-3, server: a1.wanxiangjd.cc, port: 14003, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-4, server: a1.wanxiangjd.cc, port: 14004, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-5, server: a1.wanxiangjd.cc, port: 14005, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-6, server: a1.wanxiangjd.cc, port: 14006, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-7, server: a1.wanxiangjd.cc, port: 14007, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
+  - {name: 美国1-8, server: a1.wanxiangjd.cc, port: 14008, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
 proxy-groups:
   - name: 🚀 手动选择
     type: select
@@ -242,6 +293,57 @@ proxy-groups:
       - 英国伦敦-1x
       - 台湾—TK专线
       - 印度孟买
+      - 电信测试线路1
+      - 联通测试线路2
+      - 移动测试线路3
+      - 线路01
+      - 直连美国A1[推荐]
+      - 直连美国A2[推荐]
+      - 【家宽】香港01
+      - 香港1
+      - 香港2
+      - 香港3
+      - 香港4
+      - 香港5
+      - 香港6
+      - 香港7
+      - 香港8
+      - 香港9
+      - 香港10
+      - 香港11
+      - 香港12
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
+      - 日本8
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
+      - 新加坡5
+      - 新加坡6
+      - 新加坡7
+      - 新加坡8
+      - 台湾1
+      - 台湾2
+      - 台湾3
+      - 台湾4
+      - 台湾5
+      - 台湾6
+      - 台湾7
+      - 台湾8
+      - 美国1-1
+      - 美国1-2
+      - 美国1-3
+      - 美国1-4
+      - 美国1-5
+      - 美国1-6
+      - 美国1-7
+      - 美国1-8
   - name: ♻️ 自动选择
     type: url-test
     url: https://cp.cloudflare.com/generate_204
@@ -364,6 +466,57 @@ proxy-groups:
       - 英国伦敦-1x
       - 台湾—TK专线
       - 印度孟买
+      - 电信测试线路1
+      - 联通测试线路2
+      - 移动测试线路3
+      - 线路01
+      - 直连美国A1[推荐]
+      - 直连美国A2[推荐]
+      - 【家宽】香港01
+      - 香港1
+      - 香港2
+      - 香港3
+      - 香港4
+      - 香港5
+      - 香港6
+      - 香港7
+      - 香港8
+      - 香港9
+      - 香港10
+      - 香港11
+      - 香港12
+      - 日本1
+      - 日本2
+      - 日本3
+      - 日本4
+      - 日本5
+      - 日本6
+      - 日本7
+      - 日本8
+      - 新加坡1
+      - 新加坡2
+      - 新加坡3
+      - 新加坡4
+      - 新加坡5
+      - 新加坡6
+      - 新加坡7
+      - 新加坡8
+      - 台湾1
+      - 台湾2
+      - 台湾3
+      - 台湾4
+      - 台湾5
+      - 台湾6
+      - 台湾7
+      - 台湾8
+      - 美国1-1
+      - 美国1-2
+      - 美国1-3
+      - 美国1-4
+      - 美国1-5
+      - 美国1-6
+      - 美国1-7
+      - 美国1-8
   - name: 🎯 全球直连
     type: select
     proxies:
