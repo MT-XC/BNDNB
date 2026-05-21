@@ -7,82 +7,98 @@ external-controller: 127.0.0.1:9090
 proxies:
   - {name: 香港｜01｜HKT, server: hkt.ccwink.cc, port: 56309, type: hysteria2, ports: 56309, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, sni: hkt.ccwink.cc, skip-cert-verify: true}
   - {name: 香港｜02｜HKT, server: hkt.ccwink.cc, port: 6549, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜03｜家宽, server: hkaws.ccwink.photos, port: 60005, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜04｜家宽, server: jpaws.ccwink.photos, port: 60005, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜05｜AWS, server: hkaws.ccwink.photos, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜06｜AWS, server: hkaws.ccwink.photos, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜07｜AWS, server: jpaws.ccwink.photos, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜08｜AWS, server: jpaws.ccwink.photos, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港｜09｜AWS, server: jpaws.ccwink.photos, port: 88, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: hkak.ccwink.cc, skip-cert-verify: true}
-  - {name: 香港｜10｜AWS, server: hkaws.ccwink.photos, port: 88, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: hkak.ccwink.cc, skip-cert-verify: true}
-  - {name: 澳门｜01｜AWS, server: hkaws.ccwink.photos, port: 60006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 澳门｜02｜AWS, server: jpaws.ccwink.photos, port: 60006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 香港｜03｜家宽, server: sgaws.564885.xyz, port: 60005, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 香港｜04｜家宽, server: jpaws.564885.xyz, port: 60005, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 香港｜05｜AWS, server: sgaws.564885.xyz, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 香港｜06｜AWS, server: jpaws.564885.xyz, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 香港｜07｜AWS, server: jpaws.ccwink.photos, port: 88, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: hkak.ccwink.cc, skip-cert-verify: true}
+  - {name: 香港｜08｜AWS, server: hkaws.ccwink.photos, port: 88, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: hkak.ccwink.cc, skip-cert-verify: true}
+  - {name: 澳门｜01｜AWS, server: sgaws.564885.xyz, port: 60006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 澳门｜02｜AWS, server: jpaws.564885.xyz, port: 60006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
   - {name: 澳门｜03｜AWS, server: jpaws.ccwink.photos, port: 58, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: moak.ccwink.cc, skip-cert-verify: true}
-  - {name: 澳门｜04｜AWS, server: hkaws.ccwink.photos, port: 58, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: moak.ccwink.cc, skip-cert-verify: true}
+  - {name: 澳门｜04｜AWS, server: sgaws.ccwink.photos, port: 58, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: moak.ccwink.cc, skip-cert-verify: true}
   - {name: 澳门｜05｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: mo01.564895.xyz, network: ws, ws-opts: {path: /sadasd, headers: {Host: mo01.564895.xyz}}}
   - {name: 澳门｜06｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: mo01.564895.xyz, network: ws, ws-opts: {path: /sadasd, headers: {Host: mo01.564895.xyz}}, skip-cert-verify: true}
   - {name: 台湾｜01｜HiNet, server: tw.ccwink.cc, port: 30102, type: hysteria2, ports: 30102, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, obfs: salamander, obfs-password: 1PRdv858IJ37g2Ip, sni: tw.ccwink.cc, skip-cert-verify: true}
   - {name: 台湾｜02｜HiNet, server: tw.ccwink.cc, port: 6549, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 台湾｜03｜家宽, server: hkaws.ccwink.photos, port: 60002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 台湾｜04｜家宽, server: jpaws.ccwink.photos, port: 60002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 台湾｜03｜家宽, server: sgaws.564885.xyz, port: 60002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 台湾｜04｜家宽, server: jpaws.564885.xyz, port: 60002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
   - {name: 台湾｜05｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: tw01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: tw01.564895.xyz}}, skip-cert-verify: true}
   - {name: 台湾｜06｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: tw01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: tw01.564895.xyz}}, skip-cert-verify: true}
-  - {name: 日本｜01｜AWS, server: hkaws.ccwink.photos, port: 60004, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 日本｜02｜AWS, server: jpaws.ccwink.photos, port: 60004, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 日本｜03｜AWS, server: hkaws.ccwink.photos, port: 6533, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: jpdigital.ccwink.cc, skip-cert-verify: true}
+  - {name: 日本｜01｜AWS, server: sgaws.564885.xyz, port: 60004, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 日本｜02｜AWS, server: jpaws.564885.xyz, port: 60004, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 日本｜03｜AWS, server: sgaws.ccwink.photos, port: 6533, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: jpdigital.ccwink.cc, skip-cert-verify: true}
   - {name: 日本｜04｜AWS, server: jpaws.ccwink.photos, port: 6533, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: jpdigital.ccwink.cc, skip-cert-verify: true}
   - {name: 日本｜05｜SoftBank, server: 45.192.242.129, port: 56310, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 日本｜06｜SoftBank, server: 45.192.242.129, port: 56309, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 日本｜07｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: jp01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: jp01.564895.xyz}}, skip-cert-verify: true}
-  - {name: 日本｜08｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: jp01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: jp01.564895.xyz}}, skip-cert-verify: true}
-  - {name: 新加坡｜01｜AWS, server: hkaws.ccwink.photos, port: 60003, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 新加坡｜02｜AWS, server: jpaws.ccwink.photos, port: 60003, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 日本｜06｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: jp01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: jp01.564895.xyz}}, skip-cert-verify: true}
+  - {name: 日本｜07｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: jp01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: jp01.564895.xyz}}, skip-cert-verify: true}
+  - {name: 日本｜08｜YXVM, server: 142.248.149.66, port: 56309, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 新加坡｜01｜AWS, server: sgaws.564885.xyz, port: 60003, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 新加坡｜02｜AWS, server: jpaws.564885.xyz, port: 60003, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
   - {name: 新加坡｜03｜AWS, server: jpaws.ccwink.photos, port: 52348, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: sgdigital.ccwink.cc, skip-cert-verify: true}
-  - {name: 新加坡｜04｜AWS, server: hkaws.ccwink.photos, port: 52348, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: sgdigital.ccwink.cc, skip-cert-verify: true}
-  - {name: 新加坡｜07｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: sg01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: sg01.564895.xyz}}, skip-cert-verify: true}
-  - {name: 新加坡｜08｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: sg01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: sg01.564895.xyz}}, skip-cert-verify: true}
+  - {name: 新加坡｜04｜AWS, server: sgaws.ccwink.photos, port: 52348, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: sgdigital.ccwink.cc, skip-cert-verify: true}
+  - {name: 新加坡｜05｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: sg01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: sg01.564895.xyz}}, skip-cert-verify: true}
+  - {name: 新加坡｜06｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: sg01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: sg01.564895.xyz}}, skip-cert-verify: true}
   - {name: 美国｜01｜Tencent Cloud, server: 43.162.108.172, port: 60002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 美国｜02｜Tencent Cloud, server: 43.162.108.172, port: 60001, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 美国｜03｜OCI, server: 144.24.7.139, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 美国｜04｜AWS, server: hkaws.ccwink.photos, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 美国｜05｜AWS, server: jpaws.ccwink.photos, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 美国｜02｜OCI, server: 144.24.7.139, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 美国｜03｜AWS, server: sgaws.564885.xyz, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 美国｜04｜AWS, server: jpaws.564885.xyz, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
   - {name: 德国｜01｜NT, server: 152.53.133.252, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 德国｜02｜AWS, server: hkaws.ccwink.photos, port: 30006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 德国｜03｜AWS, server: jpaws.ccwink.photos, port: 30006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 德国｜02｜AWS, server: sgaws.564885.xyz, port: 30006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 德国｜03｜AWS, server: jpaws.564885.xyz, port: 30006, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
   - {name: 德国｜04｜AWS, server: jpaws.ccwink.photos, port: 56, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: de.ccwink.cc, skip-cert-verify: true}
-  - {name: 德国｜05｜AWS, server: hkaws.ccwink.photos, port: 56, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: de.ccwink.cc, skip-cert-verify: true}
+  - {name: 德国｜05｜AWS, server: sgaws.ccwink.photos, port: 56, type: tuic, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, alpn: [h3], congestion-controller: bbr, sni: de.ccwink.cc, skip-cert-verify: true}
   - {name: 德国｜06｜BGP, server: cf01.564895.xyz, port: 2053, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: de01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: de01.564895.xyz}}, skip-cert-verify: true}
   - {name: 德国｜07｜BGP, server: cf02.564895.xyz, port: 2096, type: vless, tls: true, uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, servername: de01.564895.xyz, network: ws, ws-opts: {path: /asdasd, headers: {Host: de01.564895.xyz}}, skip-cert-verify: true}
   - {name: 英国｜01｜OCI, server: 132.145.69.182, port: 30002, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 英国｜02｜AWS, server: hkaws.ccwink.photos, port: 30007, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 英国｜03｜AWS, server: jpaws.ccwink.photos, port: 30007, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
-  - {name: 香港高速01|BGP|流媒体, server: aws-link1.liangxin1.xyz, port: 35248, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: c8c0f951}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 香港高速02|BGP|流媒体, server: aws-link2.liangxin1.xyz, port: 38725, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: HvwnLBMMKsmvghGX5yVPq3J2HWxwr1GGQB2WIvbPvAY, short-id: 8f6ca378}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 新加坡高速01|BGP|流媒体, server: aws-link7.liangxin1.xyz, port: 48574, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.sg, host: www.lamer.com.sg, flow: xtls-rprx-vision, reality-opts: {public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc, short-id: f8f18902}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 新加坡高速02|BGP|流媒体, server: aws-link8.liangxin1.xyz, port: 39645, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: iosapps.itunes.apple.com, host: iosapps.itunes.apple.com, flow: xtls-rprx-vision, reality-opts: {public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ, short-id: 2b3b0b93}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 新加坡高速03|BGP|流媒体, server: aws-link9.liangxin1.xyz, port: 23587, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: iosapps.itunes.apple.com, host: iosapps.itunes.apple.com, flow: xtls-rprx-vision, reality-opts: {public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA, short-id: 19b580ae}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 新加坡高速04|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 新加坡高速05|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 新加坡高速06|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 日本高速03|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs1jp.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 日本高速04|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs1jp.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 日本高速05|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs2jp.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 日本高速06|BGP|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs2jp.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 美国高速01|流媒体, server: aws-link19.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: 6314e825}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 美国高速03|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-us1.lxy1015.top, network: ws, ws-opts: {path: /liangxin/us, headers: {Host: lx-us1.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 美国高速04|流媒体, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-us1.lxy1015.top, network: ws, ws-opts: {path: /liangxin/us, headers: {Host: lx-us1.lxy1015.top}}, skip-cert-verify: false}
-  - {name: 韩国高速01|BGP|流媒体, server: aws-link25.liangxin1.xyz, port: 34578, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: PSn2s5TN4e7n0LkzPunu2IA1hSmOoPYFu3d_psl2Nmc, short-id: e534c8be}, client-fingerprint: random, skip-cert-verify: false}
-  - {name: 台湾高速01|BGP|流媒体, server: aws-link27.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg, short-id: a8609be8}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 英国｜02｜AWS, server: sgaws.564885.xyz, port: 30007, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 英国｜03｜AWS, server: jpaws.564885.xyz, port: 30007, type: anytls, password: 2f4c3fc5-8fa2-4576-a583-8f98a6026887, skip-cert-verify: true}
+  - {name: 日本高速01|CTCU|0.5x, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: jp-lx.777076.xyz, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp-lx.777076.xyz}}, skip-cert-verify: false}
+  - {name: 日本高速02|CTCU|0.5x, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: jp2-lx.777076.xyz, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp2-lx.777076.xyz}}, skip-cert-verify: false}
+  - {name: 香港高速01|BGP|CMCU, server: aws-link1.liangxin1.xyz, port: 35248, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: IGsSxC0wgn7wLy0NM0QN_yOREDKT_814Y_3_rbgDoTc, short-id: c8c0f951}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 香港高速02|BGP|CMCU, server: aws-link2.liangxin1.xyz, port: 38725, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: HvwnLBMMKsmvghGX5yVPq3J2HWxwr1GGQB2WIvbPvAY, short-id: 8f6ca378}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 香港高速03|BGP|CMCU, server: aws-link3.liangxin1.xyz, port: 27758, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: EYa4ic3GAxqznV61U-OOww-WKsu5wuQQptyS3fw7czM, short-id: c50db39f}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 香港高速04|BGP|CMCU, server: aws-link4.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: 3FPGTaxkfOM3nEUWUyCiqkH5oJGsOx-WxPJfADi1QWY, short-id: 7f369e14}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 香港高速05|BGP|CMCU, server: aws-link5.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: a11gdDetacKBsiBBfhsPvanTGMtVyZEIvax7gU5Wplg, short-id: 9bf38508}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 新加坡高速01|BGP|CTCUCM, server: aws-link7.liangxin1.xyz, port: 48574, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.sg, host: www.lamer.com.sg, flow: xtls-rprx-vision, reality-opts: {public-key: lmxSayN8tUg2Dag2MPXrdqZ2SQK9K3OjlaKk8wVCRnc, short-id: f8f18902}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 新加坡高速02|BGP|CTCUCM, server: aws-link8.liangxin1.xyz, port: 39645, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: iosapps.itunes.apple.com, host: iosapps.itunes.apple.com, flow: xtls-rprx-vision, reality-opts: {public-key: x7VqpFP7_PrY4ebNw8hi8Ec5Tm5Upmt5JOdrN1M9VnQ, short-id: 2b3b0b93}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 新加坡高速03|BGP|CTCUCM, server: aws-link9.liangxin1.xyz, port: 23587, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: iosapps.itunes.apple.com, host: iosapps.itunes.apple.com, flow: xtls-rprx-vision, reality-opts: {public-key: H66PLLf6HkZwHk4oFqisfTawIvw2cxkEwk8Ue8sHZgA, short-id: 19b580ae}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 新加坡高速04|BGP|CTCUCM, server: aws-link30.liangxin1.xyz, port: 23568, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.lamer.com.hk, host: www.lamer.com.hk, flow: xtls-rprx-vision, reality-opts: {public-key: EjcM-ENrpWY8iIL82qJtQrZgRs4KlVqhdisqLAXonUY, short-id: 55d046dc}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 新加坡高速05|BGP|CTCUCM, server: aws-link31.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: wXayfckurSM2zWeis7OAL_QVGm9wBLr0WYp2zFtJFAE, short-id: c7487aeb}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 新加坡高速06|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 新加坡高速07|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 新加坡高速08|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-1sg.lxy1015.top, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 日本高速01|BGP|CUCM, server: aws-link13.liangxin1.xyz, port: 36574, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.apple.com.cn, host: www.apple.com.cn, flow: xtls-rprx-vision, reality-opts: {public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols, short-id: 32a3650d}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 日本高速02|BGP|CUCM, server: aws-link14.liangxin1.xyz, port: 25485, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: www.apple.com.cn, host: www.apple.com.cn, flow: xtls-rprx-vision, reality-opts: {public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg, short-id: 9c5b8c53}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 日本高速03|BGP|CUCM, server: aws-link19.liangxin1.xyz, port: 8654, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: 6314e825}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 日本高速04|BGP|CUCM, server: aws-link20.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: 6314e825}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 日本高速05|BGP|CUCM, server: aws-link23.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c, short-id: ba826a54}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 日本高速06|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs1jp.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 日本高速07|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs1jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs1jp.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 日本高速08|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs2jp.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 日本高速09|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lxs2jp.lxy1015.top, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lxs2jp.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 美国高速01|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-us1.lxy1015.top, network: ws, ws-opts: {path: /liangxin/us, headers: {Host: lx-us1.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 美国高速02|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: lx-us1.lxy1015.top, network: ws, ws-opts: {path: /liangxin/us, headers: {Host: lx-us1.lxy1015.top}}, skip-cert-verify: false}
+  - {name: 英国伦敦|CTCU|0.1x, server: cfyes.lxy1015.top, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: gb-lx.777076.xyz, network: ws, ws-opts: {path: /liangxin/gb1, headers: {Host: gb-lx.777076.xyz}}, skip-cert-verify: false}
+  - {name: 韩国高速01|BGP|流媒体, server: aws-link27.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: a9I2uA3NNZA6uBAe3Tui9vZ8CG5MrMaYOifWrAdc0zg, short-id: a8609be8}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 台湾高速01|BGP|流媒体, server: aws-link28.liangxin1.xyz, port: 443, type: vless, tls: true, uuid: edd42605-063c-46d0-b78a-de4fa119ba64, servername: download-porter.hoyoverse.com, host: download-porter.hoyoverse.com, flow: xtls-rprx-vision, reality-opts: {public-key: PFTc9Cn176HxLhtBCIzONGZIBVDJJodsCs4QHaTt7Sc, short-id: b8fe57fe}, client-fingerprint: random, skip-cert-verify: false}
+  - {name: 香港专线01|BGP|流媒体, server: aws-linkhy1.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
   - {name: 香港专线02|BGP|流媒体, server: aws-linkhy2.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
   - {name: 香港专线03|BGP|流媒体, server: aws-linkhy3.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
+  - {name: 香港专线04|BGP|流媒体, server: aws-linkhy4.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
+  - {name: 新加坡专线01|BGP|流媒体, server: aws-linkhy9.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
   - {name: 新加坡专线02|BGP|流媒体, server: aws-linkhy10.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
   - {name: 新加坡专线03|BGP|流媒体, server: aws-linkhy11.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
+  - {name: 新加坡专线04|BGP|流媒体, server: aws-linkhy12.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: iosapps.itunes.apple.com, skip-cert-verify: true}
   - {name: 日本专线01|BGP|流媒体, server: aws-linkhy15.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-jp.biliimg.com, skip-cert-verify: true}
   - {name: 日本专线02|BGP|流媒体, server: aws-linkhy16.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-jp2.biliimg.com, skip-cert-verify: true}
+  - {name: 日本专线03|BGP|流媒体, server: aws-linkhy17.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-jp3.biliimg.com, skip-cert-verify: true}
+  - {name: 日本专线04|BGP|流媒体, server: aws-linkhy18.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-jp4.biliimg.com, skip-cert-verify: true}
   - {name: 韩国专线01|BGP|流媒体, server: aws-linkhy21.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-kr.biliimg.com, skip-cert-verify: true}
-  - {name: 台湾专线01|BGP|流媒体, server: aws-linkhy23.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-tw.biliimg.com, skip-cert-verify: true}
+  - {name: 台湾专线01|BGP|流媒体, server: aws-linkhy22.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-tw.biliimg.com, skip-cert-verify: true}
+  - {name: 英国伦敦01|流媒体|0.1x, server: 203.57.82.107, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-gb.biliimg.com, skip-cert-verify: true}
+  - {name: 英国伦敦02|流媒体|0.1x, server: 203.57.82.107, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: bilibili-gb.biliimg.com, skip-cert-verify: true}
   - {name: 美国01|流媒体, server: 203.10.97.121, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: www.apple.com, skip-cert-verify: true}
-  - {name: 美国02|流媒体, server: aws-linkhy27.liangxin1.xyz, port: 60000, type: hysteria2, ports: 60000, password: edd42605-063c-46d0-b78a-de4fa119ba64, sni: www.apple.com, skip-cert-verify: true}
   - {name: 美国洛杉矶1号, server: 208.87.242.105, port: 50000, type: hysteria2, ports: 50000, password: 4f1f0363-4392-4dc1-ac54-fe47bf1cf57d, sni: www.bing.com, skip-cert-verify: true}
   - {name: 美国洛杉矶2号, server: 208.87.242.109, port: 50000, type: hysteria2, ports: 50000, password: 4f1f0363-4392-4dc1-ac54-fe47bf1cf57d, sni: www.bing.com, skip-cert-verify: true}
   - {name: 美国洛杉矶3号, server: 208.87.242.163, port: 50000, type: hysteria2, ports: 50000, password: 4f1f0363-4392-4dc1-ac54-fe47bf1cf57d, sni: www.bing.com, skip-cert-verify: true}
@@ -124,7 +140,6 @@ proxies:
   - {name: 电信测试线路1, server: 162.159.48.5, port: 443, type: vless, tls: true, uuid: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, servername: 227.bxyewqrbx.top, network: ws, ws-opts: {path: /jd/xg1, headers: {Host: 227.bxyewqrbx.top}}}
   - {name: 联通测试线路2, server: 104.26.12.210, port: 443, type: vless, tls: true, uuid: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, servername: 227.bxyewqrbx.top, network: ws, ws-opts: {path: /jd/xg1, headers: {Host: 227.bxyewqrbx.top}}}
   - {name: 移动测试线路3, server: 104.18.45.170, port: 443, type: vless, tls: true, uuid: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, servername: 227.bxyewqrbx.top, network: ws, ws-opts: {path: /jd/xg1, headers: {Host: 227.bxyewqrbx.top}}}
-  - {name: 线路01, server: usa1.wanxiangjd.cc, port: 14010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
   - {name: "直连美国A1[推荐]", server: usa1.wanxiangjd.cc, port: 14010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
   - {name: "直连美国A2[推荐]", server: usa3.wanxiangjd.cc, port: 14010, type: anytls, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, skip-cert-verify: true}
   - {name: 【家宽】香港01, server: hk.subwx.com, port: 35000, type: hysteria2, ports: 35000, password: cb3b4b9b-b545-498d-8ba7-7007c0e1b4d4, sni: apple.com, skip-cert-verify: true}
@@ -185,8 +200,6 @@ proxy-groups:
       - 香港｜06｜AWS
       - 香港｜07｜AWS
       - 香港｜08｜AWS
-      - 香港｜09｜AWS
-      - 香港｜10｜AWS
       - 澳门｜01｜AWS
       - 澳门｜02｜AWS
       - 澳门｜03｜AWS
@@ -204,20 +217,19 @@ proxy-groups:
       - 日本｜03｜AWS
       - 日本｜04｜AWS
       - 日本｜05｜SoftBank
-      - 日本｜06｜SoftBank
+      - 日本｜06｜BGP
       - 日本｜07｜BGP
-      - 日本｜08｜BGP
+      - 日本｜08｜YXVM
       - 新加坡｜01｜AWS
       - 新加坡｜02｜AWS
       - 新加坡｜03｜AWS
       - 新加坡｜04｜AWS
-      - 新加坡｜07｜BGP
-      - 新加坡｜08｜BGP
+      - 新加坡｜05｜BGP
+      - 新加坡｜06｜BGP
       - 美国｜01｜Tencent Cloud
-      - 美国｜02｜Tencent Cloud
-      - 美国｜03｜OCI
+      - 美国｜02｜OCI
+      - 美国｜03｜AWS
       - 美国｜04｜AWS
-      - 美国｜05｜AWS
       - 德国｜01｜NT
       - 德国｜02｜AWS
       - 德国｜03｜AWS
@@ -228,33 +240,52 @@ proxy-groups:
       - 英国｜01｜OCI
       - 英国｜02｜AWS
       - 英国｜03｜AWS
-      - 香港高速01|BGP|流媒体
-      - 香港高速02|BGP|流媒体
-      - 新加坡高速01|BGP|流媒体
-      - 新加坡高速02|BGP|流媒体
-      - 新加坡高速03|BGP|流媒体
-      - 新加坡高速04|BGP|流媒体
-      - 新加坡高速05|BGP|流媒体
-      - 新加坡高速06|BGP|流媒体
-      - 日本高速03|BGP|流媒体
-      - 日本高速04|BGP|流媒体
-      - 日本高速05|BGP|流媒体
-      - 日本高速06|BGP|流媒体
-      - 美国高速01|流媒体
-      - 美国高速03|流媒体
-      - 美国高速04|流媒体
+      - 日本高速01|CTCU|0.5x
+      - 日本高速02|CTCU|0.5x
+      - 香港高速01|BGP|CMCU
+      - 香港高速02|BGP|CMCU
+      - 香港高速03|BGP|CMCU
+      - 香港高速04|BGP|CMCU
+      - 香港高速05|BGP|CMCU
+      - 新加坡高速01|BGP|CTCUCM
+      - 新加坡高速02|BGP|CTCUCM
+      - 新加坡高速03|BGP|CTCUCM
+      - 新加坡高速04|BGP|CTCUCM
+      - 新加坡高速05|BGP|CTCUCM
+      - 新加坡高速06|BGP|CTCU
+      - 新加坡高速07|BGP|CTCU
+      - 新加坡高速08|BGP|CTCU
+      - 日本高速01|BGP|CUCM
+      - 日本高速02|BGP|CUCM
+      - 日本高速03|BGP|CUCM
+      - 日本高速04|BGP|CUCM
+      - 日本高速05|BGP|CUCM
+      - 日本高速06|BGP|CTCU
+      - 日本高速07|BGP|CTCU
+      - 日本高速08|BGP|CTCU
+      - 日本高速09|BGP|CTCU
+      - 美国高速01|CTCU
+      - 美国高速02|CTCU
+      - 英国伦敦|CTCU|0.1x
       - 韩国高速01|BGP|流媒体
       - 台湾高速01|BGP|流媒体
+      - 香港专线01|BGP|流媒体
       - 香港专线02|BGP|流媒体
       - 香港专线03|BGP|流媒体
+      - 香港专线04|BGP|流媒体
+      - 新加坡专线01|BGP|流媒体
       - 新加坡专线02|BGP|流媒体
       - 新加坡专线03|BGP|流媒体
+      - 新加坡专线04|BGP|流媒体
       - 日本专线01|BGP|流媒体
       - 日本专线02|BGP|流媒体
+      - 日本专线03|BGP|流媒体
+      - 日本专线04|BGP|流媒体
       - 韩国专线01|BGP|流媒体
       - 台湾专线01|BGP|流媒体
+      - 英国伦敦01|流媒体|0.1x
+      - 英国伦敦02|流媒体|0.1x
       - 美国01|流媒体
-      - 美国02|流媒体
       - 美国洛杉矶1号
       - 美国洛杉矶2号
       - 美国洛杉矶3号
@@ -296,7 +327,6 @@ proxy-groups:
       - 电信测试线路1
       - 联通测试线路2
       - 移动测试线路3
-      - 线路01
       - 直连美国A1[推荐]
       - 直连美国A2[推荐]
       - 【家宽】香港01
@@ -358,8 +388,6 @@ proxy-groups:
       - 香港｜06｜AWS
       - 香港｜07｜AWS
       - 香港｜08｜AWS
-      - 香港｜09｜AWS
-      - 香港｜10｜AWS
       - 澳门｜01｜AWS
       - 澳门｜02｜AWS
       - 澳门｜03｜AWS
@@ -377,20 +405,19 @@ proxy-groups:
       - 日本｜03｜AWS
       - 日本｜04｜AWS
       - 日本｜05｜SoftBank
-      - 日本｜06｜SoftBank
+      - 日本｜06｜BGP
       - 日本｜07｜BGP
-      - 日本｜08｜BGP
+      - 日本｜08｜YXVM
       - 新加坡｜01｜AWS
       - 新加坡｜02｜AWS
       - 新加坡｜03｜AWS
       - 新加坡｜04｜AWS
-      - 新加坡｜07｜BGP
-      - 新加坡｜08｜BGP
+      - 新加坡｜05｜BGP
+      - 新加坡｜06｜BGP
       - 美国｜01｜Tencent Cloud
-      - 美国｜02｜Tencent Cloud
-      - 美国｜03｜OCI
+      - 美国｜02｜OCI
+      - 美国｜03｜AWS
       - 美国｜04｜AWS
-      - 美国｜05｜AWS
       - 德国｜01｜NT
       - 德国｜02｜AWS
       - 德国｜03｜AWS
@@ -401,33 +428,52 @@ proxy-groups:
       - 英国｜01｜OCI
       - 英国｜02｜AWS
       - 英国｜03｜AWS
-      - 香港高速01|BGP|流媒体
-      - 香港高速02|BGP|流媒体
-      - 新加坡高速01|BGP|流媒体
-      - 新加坡高速02|BGP|流媒体
-      - 新加坡高速03|BGP|流媒体
-      - 新加坡高速04|BGP|流媒体
-      - 新加坡高速05|BGP|流媒体
-      - 新加坡高速06|BGP|流媒体
-      - 日本高速03|BGP|流媒体
-      - 日本高速04|BGP|流媒体
-      - 日本高速05|BGP|流媒体
-      - 日本高速06|BGP|流媒体
-      - 美国高速01|流媒体
-      - 美国高速03|流媒体
-      - 美国高速04|流媒体
+      - 日本高速01|CTCU|0.5x
+      - 日本高速02|CTCU|0.5x
+      - 香港高速01|BGP|CMCU
+      - 香港高速02|BGP|CMCU
+      - 香港高速03|BGP|CMCU
+      - 香港高速04|BGP|CMCU
+      - 香港高速05|BGP|CMCU
+      - 新加坡高速01|BGP|CTCUCM
+      - 新加坡高速02|BGP|CTCUCM
+      - 新加坡高速03|BGP|CTCUCM
+      - 新加坡高速04|BGP|CTCUCM
+      - 新加坡高速05|BGP|CTCUCM
+      - 新加坡高速06|BGP|CTCU
+      - 新加坡高速07|BGP|CTCU
+      - 新加坡高速08|BGP|CTCU
+      - 日本高速01|BGP|CUCM
+      - 日本高速02|BGP|CUCM
+      - 日本高速03|BGP|CUCM
+      - 日本高速04|BGP|CUCM
+      - 日本高速05|BGP|CUCM
+      - 日本高速06|BGP|CTCU
+      - 日本高速07|BGP|CTCU
+      - 日本高速08|BGP|CTCU
+      - 日本高速09|BGP|CTCU
+      - 美国高速01|CTCU
+      - 美国高速02|CTCU
+      - 英国伦敦|CTCU|0.1x
       - 韩国高速01|BGP|流媒体
       - 台湾高速01|BGP|流媒体
+      - 香港专线01|BGP|流媒体
       - 香港专线02|BGP|流媒体
       - 香港专线03|BGP|流媒体
+      - 香港专线04|BGP|流媒体
+      - 新加坡专线01|BGP|流媒体
       - 新加坡专线02|BGP|流媒体
       - 新加坡专线03|BGP|流媒体
+      - 新加坡专线04|BGP|流媒体
       - 日本专线01|BGP|流媒体
       - 日本专线02|BGP|流媒体
+      - 日本专线03|BGP|流媒体
+      - 日本专线04|BGP|流媒体
       - 韩国专线01|BGP|流媒体
       - 台湾专线01|BGP|流媒体
+      - 英国伦敦01|流媒体|0.1x
+      - 英国伦敦02|流媒体|0.1x
       - 美国01|流媒体
-      - 美国02|流媒体
       - 美国洛杉矶1号
       - 美国洛杉矶2号
       - 美国洛杉矶3号
@@ -469,7 +515,6 @@ proxy-groups:
       - 电信测试线路1
       - 联通测试线路2
       - 移动测试线路3
-      - 线路01
       - 直连美国A1[推荐]
       - 直连美国A2[推荐]
       - 【家宽】香港01
